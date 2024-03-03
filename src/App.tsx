@@ -9,10 +9,8 @@ import { Services } from "./components/Services";
 function App() {
   const [price, setPrice] = useState(0);
 
-  let cost = 1;
-
-  function switchPrice() {
-    setPrice(price);
+  function switchPrice(index: number) {
+    setPrice(index);
   }
 
   return (

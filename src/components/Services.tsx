@@ -4,6 +4,11 @@ type ServicesProps = {
   switchCost: (cost: number) => void;
 };
 
+const avitoZoonFlampPrice = 200;
+const yandexMapsServicesOtzovikPrice = 250;
+const AvitoPFTgWkPrice = 10;
+const gisPrice = 150;
+
 export function Services(props: ServicesProps) {
   const [choose, setChoose] = useState(0);
 
@@ -26,7 +31,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(1);
-              props.switchCost(200);
+              props.switchCost(avitoZoonFlampPrice);
             }}
           >
             <img
@@ -43,7 +48,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(2);
-              props.switchCost(250);
+              props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
             <img
@@ -60,6 +65,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(3);
+              props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
             <img
@@ -76,6 +82,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(4);
+              props.switchCost(AvitoPFTgWkPrice);
             }}
           >
             <img
@@ -92,6 +99,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(5);
+              props.switchCost(gisPrice);
             }}
           >
             <img
@@ -108,6 +116,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(6);
+              props.switchCost(gisPrice);
             }}
           >
             <img
@@ -126,6 +135,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(7);
+              props.switchCost(AvitoPFTgWkPrice);
             }}
           >
             <img src="./src/assets/img/tg.png" className="services__item-img" />
@@ -139,6 +149,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(8);
+              props.switchCost(AvitoPFTgWkPrice);
             }}
           >
             <img src="./src/assets/img/vk.png" className="services__item-img" />
@@ -152,6 +163,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(9);
+              props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
             <img
@@ -173,7 +185,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(10);
-              // props.switchCost(avitoZoonFlampPrice);
+              props.switchCost(avitoZoonFlampPrice);
             }}
           >
             <img
@@ -190,7 +202,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(11);
-              // props.switchCost(avitoZoonFlampPrice);
+              props.switchCost(avitoZoonFlampPrice);
             }}
           >
             <img
@@ -207,6 +219,7 @@ export function Services(props: ServicesProps) {
             }`}
             onClick={() => {
               setChoose(12);
+              props.switchCost(0);
             }}
           >
             <img

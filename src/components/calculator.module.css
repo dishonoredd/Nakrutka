@@ -1,15 +1,16 @@
 .calculator__section {
   height: 500px;
+  display: flex;
 }
 
 .p {
-  color: #3d76fb;
+  color: #000000;
   font-size: 65px;
 }
 
 .sum {
-  color: black;
-  font-size: 50px;
+  color: #3d76fb;
+  font-size: 66px;
   font-weight: 400;
 }
 
@@ -22,7 +23,29 @@
   padding-left: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
-  color: #3d76fb;
+}
+
+.left {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right {
+  width: 45%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 15px;
+  background-color: #3d76fb;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .input:focus {
@@ -30,5 +53,20 @@
   overflow: hidden;
 }
 
-.input:hover {
+.a {
+  padding-top: 30px;
+  width: 80%;
+  height: 90px;
+  font-size: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  gap: 10px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
 }

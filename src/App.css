@@ -249,20 +249,22 @@ section {
   border-radius: 50%;
 }
 .footer {
-  width: 90%;
+  width: 100%;
   margin: 60px auto 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
-  box-shadow: 0 0 10px #3d76fb;
+  background-color: #3d76fb;
+
+  border-radius: 0px;
+  border-bottom: 0px;
   padding: 20px 100px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   align-items: center;
   gap: 50px;
 }
 .footer > p {
-  color: #3a3a3a;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -270,7 +272,7 @@ section {
   font-size: 24px;
 }
 .footer__container > b {
-  color: #777;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;

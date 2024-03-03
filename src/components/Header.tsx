@@ -9,11 +9,6 @@ export function Header() {
             Тарифы
           </a>
         </li>
-        <li>
-          <a href="#reviews" className="nav-link">
-            Контакты
-          </a>
-        </li>
       </nav>
       {/* <!-- <a href="#contacts" className="call-btn">Sign up</a> --> */}
       <div className="hamburger-menu">
