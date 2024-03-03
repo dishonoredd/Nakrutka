@@ -302,7 +302,8 @@ section {
 .slider__arrow {
   width: 25px;
   height: 25px;
-  border-top: 3px solid #fff;
   border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+
   cursor: pointer;
 }
