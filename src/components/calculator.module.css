@@ -1,0 +1,34 @@
+.calculator__section {
+  height: 500px;
+}
+
+.p {
+  color: #3d76fb;
+  font-size: 65px;
+}
+
+.sum {
+  color: black;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.input {
+  width: 850px;
+  height: 80px;
+  font-size: 50px;
+  outline: none;
+  background-color: white;
+  padding-left: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  color: #3d76fb;
+}
+
+.input:focus {
+  outline: none;
+  overflow: hidden;
+}
+
+.input:hover {
+}
