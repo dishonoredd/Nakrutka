@@ -16,28 +16,6 @@ export function Footer() {
         </span>
         Ватсап: +79304076411
       </p>
-      <nav className="footer__nav">
-        <li>
-          <a href="#about" className="nav-link">
-            About us
-          </a>
-        </li>
-        <li>
-          <a href="#teachers" className="nav-link">
-            Teachers
-          </a>
-        </li>
-        <li>
-          <a href="#reviews" className="nav-link">
-            Reviews
-          </a>
-        </li>
-        <li>
-          <a href="#contacts" className="nav-link">
-            Contacts
-          </a>
-        </li>
-      </nav>
     </footer>
   );
 }

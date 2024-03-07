@@ -1,27 +1,18 @@
-import { useState } from "react";
 import "./App.css";
-import { Calculator } from "./components/Calculator";
-import { Footer } from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import { TarifRoute } from "./components/TarifRoute";
+import { Nakrutka } from "./components/Nakrutka";
 import { Header } from "./components/Header";
-import { MainPage } from "./components/MainPage";
-import { Services } from "./components/Services";
 
 function App() {
-  const [price, setPrice] = useState(0);
-
-  function switchPrice(index: number) {
-    setPrice(index);
-  }
-
   return (
     <div id="content">
-      <Header />
-      <div className="main">
-        <MainPage />
-        <Services switchCost={switchPrice} />
-        <Calculator price={price} />
-        <Footer />
-      </div>
+      <Routes>
+        <Route element={<Header />}>
+          <Route path="" index element={<TarifRoute />} />
+          <Route path="/nakrutka" element={<Nakrutka />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

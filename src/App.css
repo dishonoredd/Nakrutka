@@ -51,6 +51,8 @@ section {
   align-items: center;
   justify-content: center;
   background-color: #3d76fb;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .header__logo {
   width: 100px;
@@ -188,6 +190,7 @@ section {
   align-items: center;
   background-color: #3d76fb;
   padding: 30px 200px;
+  border-radius: 10px;
 }
 .services__nav {
   display: flex;
@@ -236,12 +239,12 @@ section {
   gap: 10px;
   width: 130px;
   padding-top: 4px;
-
+  transition: 0.1s;
   border-radius: 5px;
 }
 
-.service__item_active {
-  background-color: #6daeeb;
+.services__item:hover {
+  background-color: #3769dd;
 }
 
 .services__item-img {

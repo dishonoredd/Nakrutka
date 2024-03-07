@@ -16,21 +16,10 @@ export function Services(props: ServicesProps) {
     <section className="services">
       <h1 className="services__title">Список услуг</h1>
       <div className="services__container">
-        <div className="services__nav">
-          <button type="button" className="services__nav--btn-active">
-            Отзывы
-          </button>
-          <button type="button" className="services__nav--btn">
-            Накрутка
-          </button>
-        </div>
         <div className="services__subcontainer">
           <li
-            className={`services__item ${
-              choose === 1 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(1);
               props.switchCost(avitoZoonFlampPrice);
             }}
           >
@@ -43,11 +32,8 @@ export function Services(props: ServicesProps) {
             200 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 2 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(2);
               props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
@@ -60,11 +46,8 @@ export function Services(props: ServicesProps) {
             250 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 3 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(3);
               props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
@@ -77,11 +60,8 @@ export function Services(props: ServicesProps) {
             250 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 4 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(4);
               props.switchCost(AvitoPFTgWkPrice);
             }}
           >
@@ -94,11 +74,8 @@ export function Services(props: ServicesProps) {
             10 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 5 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(5);
               props.switchCost(gisPrice);
             }}
           >
@@ -111,11 +88,8 @@ export function Services(props: ServicesProps) {
             150 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 6 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(6);
               props.switchCost(gisPrice);
             }}
           >
@@ -130,11 +104,8 @@ export function Services(props: ServicesProps) {
         </div>
         <div className="services__subcontainer">
           <li
-            className={`services__item ${
-              choose === 7 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(7);
               props.switchCost(AvitoPFTgWkPrice);
             }}
           >
@@ -144,11 +115,8 @@ export function Services(props: ServicesProps) {
             10 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 8 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(8);
               props.switchCost(AvitoPFTgWkPrice);
             }}
           >
@@ -158,33 +126,22 @@ export function Services(props: ServicesProps) {
             10 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 9 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(9);
               props.switchCost(yandexMapsServicesOtzovikPrice);
             }}
           >
             <img
-              src="./src/assets/img/otzovik.svg"
+              src="./src/assets/img/unnamed.webp"
               className="services__item-img"
-              style={{
-                borderRadius: "0",
-                marginTop: "40px",
-                marginBottom: "40px",
-              }}
             />
             Otzovik
             <br />
             250 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 10 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(10);
               props.switchCost(avitoZoonFlampPrice);
             }}
           >
@@ -197,11 +154,8 @@ export function Services(props: ServicesProps) {
             200 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 11 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(11);
               props.switchCost(avitoZoonFlampPrice);
             }}
           >
@@ -214,18 +168,14 @@ export function Services(props: ServicesProps) {
             200 ₽
           </li>
           <li
-            className={`services__item ${
-              choose === 12 ? "service__item_active" : ""
-            }`}
+            className="services__item"
             onClick={() => {
-              setChoose(12);
               props.switchCost(0);
             }}
           >
             <img
-              src="./src/assets/img/unknown.png"
+              src="./src/assets/img/25333.png"
               className="services__item-img"
-              style={{ borderRadius: "0", width: "70px" }}
             />
             Остальные
             <br />
