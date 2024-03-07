@@ -37,6 +37,7 @@
   border-radius: 10px;
   background-color: #3d76fb;
   transition: 0.1s;
+  cursor: pointer;
 }
 
 .element:hover {
