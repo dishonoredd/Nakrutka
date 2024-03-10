@@ -81,9 +81,17 @@ export function Nakrutka() {
   const [amount, setAmount] = useState("");
   const [price, setPrice] = useState(0);
   const [getName, setGetName] = useState("");
+
   const parsedAmount = parseInt(amount);
 
-  console.log(price);
+  function showPrice() {
+    if (amount === "" || amount[0] === "-") {
+      return "0";
+    } else {
+      return parsedAmount * price;
+    }
+  }
+
   return (
     <section className={css.section}>
       <ul className={css.services__container}>
@@ -114,9 +122,7 @@ export function Nakrutka() {
             type="number"
             placeholder="Нужное количество отзывов"
           />
-          <p className={a.p}>
-            Сумма составляет: {amount === "" ? "0" : parsedAmount * price} руб
-          </p>
+          <p className={a.p}>Сумма составляет: {showPrice()} руб</p>
         </div>
         <div className={css.right}>
           <p className={css.p}>Вы выбрали: {getName}</p>

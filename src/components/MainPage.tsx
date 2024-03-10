@@ -8,12 +8,9 @@ export function MainPage() {
           <br />
           Самые выгодные цены!
         </p>
-        <a href="#contacts" className="tw-btn">
-          Тарифы
-        </a>
       </div>
       <div className="main__content2">
-        <img src="./src/assets/img/fone4.avif" />
+        <img src="./src/assets/img/fone4.avif" className="girl__image" />
       </div>
     </section>
   );
