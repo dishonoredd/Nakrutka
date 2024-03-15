@@ -309,7 +309,7 @@ section {
   cursor: pointer;
 }
 .girl__image {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -342,6 +342,10 @@ section {
 }
 
 @media screen and (max-width: 860px) {
+  .services__item-img {
+    width: 60px;
+    height: 60px;
+  }
   .main__content h1 {
     font-size: 35px;
   }
@@ -418,6 +422,9 @@ section {
   .services__item:hover {
     background-color: inherit;
   }
+  .services__title {
+    font-size: 30px;
+  }
   .services__container {
     display: flex;
     align-items: center;
@@ -426,5 +433,12 @@ section {
   }
   .footer {
     justify-content: center;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer__container b {
+    font-size: 12px;
   }
 }

@@ -1,5 +1,4 @@
 import css from "./nakrutka.module.css";
-import a from "./calculator.module.css";
 import { useState } from "react";
 
 const objects = [
@@ -94,6 +93,7 @@ export function Nakrutka() {
 
   return (
     <section className={css.section}>
+      <h1 className={css.hhh}>Выберите сервис</h1>
       <ul className={css.services__container}>
         {objects.map((x) => (
           <div className={css.ul}>
@@ -113,16 +113,16 @@ export function Nakrutka() {
       </ul>
       <div className={css.calculator__cont}>
         <div className={css.left}>
-          <p className={a.p}>Рассчитать сумму заказа</p>
+          <p className={css.p}>Рассчитать сумму заказа</p>
           <input
             onChange={(e) => {
               setAmount(e.target.value);
             }}
-            className={a.input}
+            className={css.input}
             type="number"
             placeholder="Нужное количество отзывов"
           />
-          <p className={a.p}>Сумма составляет: {showPrice()} руб</p>
+          <p className={css.p}>Сумма составляет: {showPrice()} руб</p>
         </div>
         <div className={css.right}>
           <p className={css.p}>Вы выбрали: {getName}</p>
